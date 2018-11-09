@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		2D5378261FAA1A9400D5DBA9 /* flutter_assets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5378251FAA1A9400D5DBA9 /* flutter_assets */; };
+		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
+		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		500EB3222170575D0099DB35 /* RennSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2CB2170575D0099DB35 /* RennSDK.bundle */; };
+		500EB3232170575D0099DB35 /* RennSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2CC2170575D0099DB35 /* RennSDK.framework */; };
+		500EB3242170575D0099DB35 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2CE2170575D0099DB35 /* WeiboSDK.bundle */; };
+		500EB3252170575D0099DB35 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2CF2170575D0099DB35 /* libWeiboSDK.a */; };
+		500EB3262170575D0099DB35 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2D52170575D0099DB35 /* README.txt */; };
+		500EB3272170575D0099DB35 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2D72170575D0099DB35 /* libWeChatSDK.a */; };
+		500EB3282170575D0099DB35 /* libAPOpenSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2D92170575D0099DB35 /* libAPOpenSdk.a */; };
+		500EB3292170575D0099DB35 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2DA2170575D0099DB35 /* README.md */; };
+		500EB32A2170575D0099DB35 /* TYRZSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2DE2170575D0099DB35 /* TYRZSDK.framework */; };
+		500EB32B2170575D0099DB35 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2DF2170575D0099DB35 /* Resource.bundle */; };
+		500EB32C2170575D0099DB35 /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2E12170575D0099DB35 /* LineSDK.framework */; };
+		500EB32D2170575D0099DB35 /* MPShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2E32170575D0099DB35 /* MPShareSDK.framework */; };
+		500EB32E2170575D0099DB35 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2E52170575D0099DB35 /* TencentOpenAPI.framework */; };
+		500EB32F2170575D0099DB35 /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2E72170575D0099DB35 /* KakaoCommon.framework */; };
+		500EB3302170575D0099DB35 /* KakaoLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2E82170575D0099DB35 /* KakaoLink.framework */; };
+		500EB3312170575D0099DB35 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2E92170575D0099DB35 /* KakaoOpenSDK.framework */; };
+		500EB3322170575D0099DB35 /* DTShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2EB2170575D0099DB35 /* DTShareKit.framework */; };
+		500EB3332170575D0099DB35 /* libYixinSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2ED2170575D0099DB35 /* libYixinSDK.a */; };
+		500EB3342170575D0099DB35 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2F12170575D0099DB35 /* ShareSDKConnector.framework */; };
+		500EB3352170575D0099DB35 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2F22170575D0099DB35 /* ShareSDK.bundle */; };
+		500EB3362170575D0099DB35 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 500EB2F42170575D0099DB35 /* ShareSDKUI.bundle */; };
+		500EB3372170575D0099DB35 /* ShareSDKConfigFile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2F52170575D0099DB35 /* ShareSDKConfigFile.framework */; };
+		500EB3382170575D0099DB35 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2F62170575D0099DB35 /* ShareSDKExtension.framework */; };
+		500EB3392170575D0099DB35 /* ShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2F72170575D0099DB35 /* ShareSDKUI.framework */; };
+		500EB33A2170575D0099DB35 /* PrintConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2F92170575D0099DB35 /* PrintConnector.framework */; };
+		500EB33B2170575D0099DB35 /* SMSConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2FA2170575D0099DB35 /* SMSConnector.framework */; };
+		500EB33C2170575D0099DB35 /* DropboxConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2FB2170575D0099DB35 /* DropboxConnector.framework */; };
+		500EB33D2170575D0099DB35 /* RedditConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2FC2170575D0099DB35 /* RedditConnector.framework */; };
+		500EB33E2170575D0099DB35 /* FacebookMessengerConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2FD2170575D0099DB35 /* FacebookMessengerConnector.framework */; };
+		500EB33F2170575D0099DB35 /* WhatsAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2FE2170575D0099DB35 /* WhatsAppConnector.framework */; };
+		500EB3402170575D0099DB35 /* TelegramConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB2FF2170575D0099DB35 /* TelegramConnector.framework */; };
+		500EB3412170575D0099DB35 /* EasyChatConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3002170575D0099DB35 /* EasyChatConnector.framework */; };
+		500EB3422170575D0099DB35 /* CMCCConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3012170575D0099DB35 /* CMCCConnector.framework */; };
+		500EB3432170575D0099DB35 /* AliSocialConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3022170575D0099DB35 /* AliSocialConnector.framework */; };
+		500EB3442170575D0099DB35 /* KaiXinConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3032170575D0099DB35 /* KaiXinConnector.framework */; };
+		500EB3452170575D0099DB35 /* MailConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3042170575D0099DB35 /* MailConnector.framework */; };
+		500EB3462170575D0099DB35 /* QQConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3052170575D0099DB35 /* QQConnector.framework */; };
+		500EB3472170575D0099DB35 /* TumblrConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3062170575D0099DB35 /* TumblrConnector.framework */; };
+		500EB3482170575D0099DB35 /* VKontakteConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3072170575D0099DB35 /* VKontakteConnector.framework */; };
+		500EB3492170575D0099DB35 /* PocketConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3082170575D0099DB35 /* PocketConnector.framework */; };
+		500EB34A2170575D0099DB35 /* MingDaoConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3092170575D0099DB35 /* MingDaoConnector.framework */; };
+		500EB34B2170575D0099DB35 /* GooglePlusConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB30A2170575D0099DB35 /* GooglePlusConnector.framework */; };
+		500EB34C2170575D0099DB35 /* TencentWeiboConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB30B2170575D0099DB35 /* TencentWeiboConnector.framework */; };
+		500EB34D2170575D0099DB35 /* LineConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB30C2170575D0099DB35 /* LineConnector.framework */; };
+		500EB34E2170575D0099DB35 /* MeiPaiConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB30D2170575D0099DB35 /* MeiPaiConnector.framework */; };
+		500EB34F2170575D0099DB35 /* CopyConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB30E2170575D0099DB35 /* CopyConnector.framework */; };
+		500EB3502170575D0099DB35 /* EvernoteConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB30F2170575D0099DB35 /* EvernoteConnector.framework */; };
+		500EB3512170575D0099DB35 /* InstapaperConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3102170575D0099DB35 /* InstapaperConnector.framework */; };
+		500EB3522170575D0099DB35 /* LinkedInConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3112170575D0099DB35 /* LinkedInConnector.framework */; };
+		500EB3532170575D0099DB35 /* FlickrConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3122170575D0099DB35 /* FlickrConnector.framework */; };
+		500EB3542170575D0099DB35 /* DingTalkConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3132170575D0099DB35 /* DingTalkConnector.framework */; };
+		500EB3552170575D0099DB35 /* YouTubeConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3142170575D0099DB35 /* YouTubeConnector.framework */; };
+		500EB3562170575D0099DB35 /* TwitterConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3152170575D0099DB35 /* TwitterConnector.framework */; };
+		500EB3572170575D0099DB35 /* FacebookConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3162170575D0099DB35 /* FacebookConnector.framework */; };
+		500EB3582170575D0099DB35 /* WechatConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3172170575D0099DB35 /* WechatConnector.framework */; };
+		500EB3592170575D0099DB35 /* YouDaoNoteConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3182170575D0099DB35 /* YouDaoNoteConnector.framework */; };
+		500EB35A2170575D0099DB35 /* RenrenConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3192170575D0099DB35 /* RenrenConnector.framework */; };
+		500EB35B2170575D0099DB35 /* PinterestConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB31A2170575D0099DB35 /* PinterestConnector.framework */; };
+		500EB35C2170575D0099DB35 /* InstagramConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB31B2170575D0099DB35 /* InstagramConnector.framework */; };
+		500EB35D2170575D0099DB35 /* KakaoConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB31C2170575D0099DB35 /* KakaoConnector.framework */; };
+		500EB35E2170575D0099DB35 /* SinaWeiboConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB31D2170575D0099DB35 /* SinaWeiboConnector.framework */; };
+		500EB35F2170575D0099DB35 /* DouBanConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB31E2170575D0099DB35 /* DouBanConnector.framework */; };
+		500EB3602170575D0099DB35 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB31F2170575D0099DB35 /* ShareSDK.framework */; };
+		500EB3612170575D0099DB35 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3212170575D0099DB35 /* MOBFoundation.framework */; };
+		500EB364217057940099DB35 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB363217057940099DB35 /* libz.tbd */; };
+		500EB3662170579B0099DB35 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB3652170579B0099DB35 /* libc++.tbd */; };
+		500EB368217057A80099DB35 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 500EB367217057A80099DB35 /* libsqlite3.tbd */; };
+		50E63323217EC90000DC863A /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
+		9705A1C71CF904A300538489 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9740EEB21CF90195004384FC /* Debug.xcconfig */; };
+		978B8F6F1D3862AE00F588F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */; };
+		97C146F31CF9000F007C117D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C146F21CF9000F007C117D /* main.m */; };
+		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		FF16694F6D29C6A85DE78278 /* libPods-Runner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AB67A2CD8121111D63D4A2 /* libPods-Runner.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */,
+				9705A1C71CF904A300538489 /* Flutter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		2D5378251FAA1A9400D5DBA9 /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_assets; path = Flutter/flutter_assets; sourceTree = SOURCE_ROOT; };
+		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
+		500CC99D2186F8E500CDA5A4 /* libaudioplayers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudioplayers.a; path = "../../../../Library/Developer/Xcode/DerivedData/Runner-gjrataeknlwobbfdjwlrenowxrcb/Build/Products/Debug-iphoneos/audioplayers/libaudioplayers.a"; sourceTree = "<group>"; };
+		500CC99F2186F8FC00CDA5A4 /* libpath_provider.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpath_provider.a; path = "../../../../Library/Developer/Xcode/DerivedData/Runner-gjrataeknlwobbfdjwlrenowxrcb/Build/Products/Debug-iphoneos/path_provider/libpath_provider.a"; sourceTree = "<group>"; };
+		500EB2CB2170575D0099DB35 /* RennSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RennSDK.bundle; sourceTree = "<group>"; };
+		500EB2CC2170575D0099DB35 /* RennSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RennSDK.framework; sourceTree = "<group>"; };
+		500EB2CE2170575D0099DB35 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		500EB2CF2170575D0099DB35 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		500EB2D02170575D0099DB35 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		500EB2D12170575D0099DB35 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		500EB2D32170575D0099DB35 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		500EB2D42170575D0099DB35 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		500EB2D52170575D0099DB35 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		500EB2D62170575D0099DB35 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		500EB2D72170575D0099DB35 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		500EB2D92170575D0099DB35 /* libAPOpenSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAPOpenSdk.a; sourceTree = "<group>"; };
+		500EB2DA2170575D0099DB35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		500EB2DB2170575D0099DB35 /* APOpenAPIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPIObject.h; sourceTree = "<group>"; };
+		500EB2DC2170575D0099DB35 /* APOpenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOpenAPI.h; sourceTree = "<group>"; };
+		500EB2DE2170575D0099DB35 /* TYRZSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZSDK.framework; sourceTree = "<group>"; };
+		500EB2DF2170575D0099DB35 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		500EB2E12170575D0099DB35 /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineSDK.framework; sourceTree = "<group>"; };
+		500EB2E32170575D0099DB35 /* MPShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPShareSDK.framework; sourceTree = "<group>"; };
+		500EB2E52170575D0099DB35 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		500EB2E72170575D0099DB35 /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
+		500EB2E82170575D0099DB35 /* KakaoLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoLink.framework; sourceTree = "<group>"; };
+		500EB2E92170575D0099DB35 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		500EB2EB2170575D0099DB35 /* DTShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTShareKit.framework; sourceTree = "<group>"; };
+		500EB2ED2170575D0099DB35 /* libYixinSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYixinSDK.a; sourceTree = "<group>"; };
+		500EB2EE2170575D0099DB35 /* YXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApiObject.h; sourceTree = "<group>"; };
+		500EB2EF2170575D0099DB35 /* YXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXApi.h; sourceTree = "<group>"; };
+		500EB2F12170575D0099DB35 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
+		500EB2F22170575D0099DB35 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
+		500EB2F42170575D0099DB35 /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKUI.bundle; sourceTree = "<group>"; };
+		500EB2F52170575D0099DB35 /* ShareSDKConfigFile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConfigFile.framework; sourceTree = "<group>"; };
+		500EB2F62170575D0099DB35 /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKExtension.framework; sourceTree = "<group>"; };
+		500EB2F72170575D0099DB35 /* ShareSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKUI.framework; sourceTree = "<group>"; };
+		500EB2F92170575D0099DB35 /* PrintConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PrintConnector.framework; sourceTree = "<group>"; };
+		500EB2FA2170575D0099DB35 /* SMSConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMSConnector.framework; sourceTree = "<group>"; };
+		500EB2FB2170575D0099DB35 /* DropboxConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxConnector.framework; sourceTree = "<group>"; };
+		500EB2FC2170575D0099DB35 /* RedditConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RedditConnector.framework; sourceTree = "<group>"; };
+		500EB2FD2170575D0099DB35 /* FacebookMessengerConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookMessengerConnector.framework; sourceTree = "<group>"; };
+		500EB2FE2170575D0099DB35 /* WhatsAppConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WhatsAppConnector.framework; sourceTree = "<group>"; };
+		500EB2FF2170575D0099DB35 /* TelegramConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TelegramConnector.framework; sourceTree = "<group>"; };
+		500EB3002170575D0099DB35 /* EasyChatConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyChatConnector.framework; sourceTree = "<group>"; };
+		500EB3012170575D0099DB35 /* CMCCConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CMCCConnector.framework; sourceTree = "<group>"; };
+		500EB3022170575D0099DB35 /* AliSocialConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliSocialConnector.framework; sourceTree = "<group>"; };
+		500EB3032170575D0099DB35 /* KaiXinConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KaiXinConnector.framework; sourceTree = "<group>"; };
+		500EB3042170575D0099DB35 /* MailConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MailConnector.framework; sourceTree = "<group>"; };
+		500EB3052170575D0099DB35 /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QQConnector.framework; sourceTree = "<group>"; };
+		500EB3062170575D0099DB35 /* TumblrConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TumblrConnector.framework; sourceTree = "<group>"; };
+		500EB3072170575D0099DB35 /* VKontakteConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VKontakteConnector.framework; sourceTree = "<group>"; };
+		500EB3082170575D0099DB35 /* PocketConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PocketConnector.framework; sourceTree = "<group>"; };
+		500EB3092170575D0099DB35 /* MingDaoConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MingDaoConnector.framework; sourceTree = "<group>"; };
+		500EB30A2170575D0099DB35 /* GooglePlusConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlusConnector.framework; sourceTree = "<group>"; };
+		500EB30B2170575D0099DB35 /* TencentWeiboConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentWeiboConnector.framework; sourceTree = "<group>"; };
+		500EB30C2170575D0099DB35 /* LineConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LineConnector.framework; sourceTree = "<group>"; };
+		500EB30D2170575D0099DB35 /* MeiPaiConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MeiPaiConnector.framework; sourceTree = "<group>"; };
+		500EB30E2170575D0099DB35 /* CopyConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CopyConnector.framework; sourceTree = "<group>"; };
+		500EB30F2170575D0099DB35 /* EvernoteConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EvernoteConnector.framework; sourceTree = "<group>"; };
+		500EB3102170575D0099DB35 /* InstapaperConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InstapaperConnector.framework; sourceTree = "<group>"; };
+		500EB3112170575D0099DB35 /* LinkedInConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedInConnector.framework; sourceTree = "<group>"; };
+		500EB3122170575D0099DB35 /* FlickrConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlickrConnector.framework; sourceTree = "<group>"; };
+		500EB3132170575D0099DB35 /* DingTalkConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DingTalkConnector.framework; sourceTree = "<group>"; };
+		500EB3142170575D0099DB35 /* YouTubeConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouTubeConnector.framework; sourceTree = "<group>"; };
+		500EB3152170575D0099DB35 /* TwitterConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterConnector.framework; sourceTree = "<group>"; };
+		500EB3162170575D0099DB35 /* FacebookConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookConnector.framework; sourceTree = "<group>"; };
+		500EB3172170575D0099DB35 /* WechatConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WechatConnector.framework; sourceTree = "<group>"; };
+		500EB3182170575D0099DB35 /* YouDaoNoteConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YouDaoNoteConnector.framework; sourceTree = "<group>"; };
+		500EB3192170575D0099DB35 /* RenrenConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RenrenConnector.framework; sourceTree = "<group>"; };
+		500EB31A2170575D0099DB35 /* PinterestConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PinterestConnector.framework; sourceTree = "<group>"; };
+		500EB31B2170575D0099DB35 /* InstagramConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InstagramConnector.framework; sourceTree = "<group>"; };
+		500EB31C2170575D0099DB35 /* KakaoConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoConnector.framework; sourceTree = "<group>"; };
+		500EB31D2170575D0099DB35 /* SinaWeiboConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SinaWeiboConnector.framework; sourceTree = "<group>"; };
+		500EB31E2170575D0099DB35 /* DouBanConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DouBanConnector.framework; sourceTree = "<group>"; };
+		500EB31F2170575D0099DB35 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
+		500EB3212170575D0099DB35 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		500EB363217057940099DB35 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		500EB3652170579B0099DB35 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		500EB367217057A80099DB35 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		501C8E9B217EDBE30099EE55 /* libvideo_player.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvideo_player.a; path = "../../../../Library/Developer/Xcode/DerivedData/Runner-gjrataeknlwobbfdjwlrenowxrcb/Build/Products/Debug-iphonesimulator/video_player/libvideo_player.a"; sourceTree = "<group>"; };
+		50317ED0217ED06800861609 /* libimage_picker.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libimage_picker.a; path = "../../../../Library/Developer/Xcode/DerivedData/Runner-gjrataeknlwobbfdjwlrenowxrcb/Build/Products/Debug-iphoneos/image_picker/libimage_picker.a"; sourceTree = "<group>"; };
+		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		7AFFD8ED1D35381100E5BB4D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84AB67A2CD8121111D63D4A2 /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
+		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
+		9740EEBA1CF902C7004384FC /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = Flutter/Flutter.framework; sourceTree = "<group>"; };
+		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C146F21CF9000F007C117D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97C146EB1CF9000F007C117D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500EB368217057A80099DB35 /* libsqlite3.tbd in Frameworks */,
+				500EB3662170579B0099DB35 /* libc++.tbd in Frameworks */,
+				500EB364217057940099DB35 /* libz.tbd in Frameworks */,
+				500EB3372170575D0099DB35 /* ShareSDKConfigFile.framework in Frameworks */,
+				500EB32D2170575D0099DB35 /* MPShareSDK.framework in Frameworks */,
+				500EB3232170575D0099DB35 /* RennSDK.framework in Frameworks */,
+				500EB34B2170575D0099DB35 /* GooglePlusConnector.framework in Frameworks */,
+				500EB3552170575D0099DB35 /* YouTubeConnector.framework in Frameworks */,
+				500EB35A2170575D0099DB35 /* RenrenConnector.framework in Frameworks */,
+				500EB3422170575D0099DB35 /* CMCCConnector.framework in Frameworks */,
+				500EB3412170575D0099DB35 /* EasyChatConnector.framework in Frameworks */,
+				500EB3592170575D0099DB35 /* YouDaoNoteConnector.framework in Frameworks */,
+				500EB33A2170575D0099DB35 /* PrintConnector.framework in Frameworks */,
+				500EB34D2170575D0099DB35 /* LineConnector.framework in Frameworks */,
+				500EB35E2170575D0099DB35 /* SinaWeiboConnector.framework in Frameworks */,
+				500EB3472170575D0099DB35 /* TumblrConnector.framework in Frameworks */,
+				500EB3312170575D0099DB35 /* KakaoOpenSDK.framework in Frameworks */,
+				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
+				500EB3502170575D0099DB35 /* EvernoteConnector.framework in Frameworks */,
+				500EB3572170575D0099DB35 /* FacebookConnector.framework in Frameworks */,
+				500EB3482170575D0099DB35 /* VKontakteConnector.framework in Frameworks */,
+				500EB34E2170575D0099DB35 /* MeiPaiConnector.framework in Frameworks */,
+				500EB3282170575D0099DB35 /* libAPOpenSdk.a in Frameworks */,
+				500EB32E2170575D0099DB35 /* TencentOpenAPI.framework in Frameworks */,
+				500EB3532170575D0099DB35 /* FlickrConnector.framework in Frameworks */,
+				500EB3512170575D0099DB35 /* InstapaperConnector.framework in Frameworks */,
+				500EB3342170575D0099DB35 /* ShareSDKConnector.framework in Frameworks */,
+				500EB3392170575D0099DB35 /* ShareSDKUI.framework in Frameworks */,
+				500EB3492170575D0099DB35 /* PocketConnector.framework in Frameworks */,
+				500EB3452170575D0099DB35 /* MailConnector.framework in Frameworks */,
+				500EB32F2170575D0099DB35 /* KakaoCommon.framework in Frameworks */,
+				500EB34F2170575D0099DB35 /* CopyConnector.framework in Frameworks */,
+				500EB3442170575D0099DB35 /* KaiXinConnector.framework in Frameworks */,
+				500EB3432170575D0099DB35 /* AliSocialConnector.framework in Frameworks */,
+				500EB3252170575D0099DB35 /* libWeiboSDK.a in Frameworks */,
+				500EB3582170575D0099DB35 /* WechatConnector.framework in Frameworks */,
+				500EB3402170575D0099DB35 /* TelegramConnector.framework in Frameworks */,
+				500EB3522170575D0099DB35 /* LinkedInConnector.framework in Frameworks */,
+				500EB35D2170575D0099DB35 /* KakaoConnector.framework in Frameworks */,
+				500EB35C2170575D0099DB35 /* InstagramConnector.framework in Frameworks */,
+				500EB34C2170575D0099DB35 /* TencentWeiboConnector.framework in Frameworks */,
+				500EB3302170575D0099DB35 /* KakaoLink.framework in Frameworks */,
+				500EB32A2170575D0099DB35 /* TYRZSDK.framework in Frameworks */,
+				500EB34A2170575D0099DB35 /* MingDaoConnector.framework in Frameworks */,
+				500EB3272170575D0099DB35 /* libWeChatSDK.a in Frameworks */,
+				500EB3562170575D0099DB35 /* TwitterConnector.framework in Frameworks */,
+				500EB32C2170575D0099DB35 /* LineSDK.framework in Frameworks */,
+				500EB33D2170575D0099DB35 /* RedditConnector.framework in Frameworks */,
+				500EB3322170575D0099DB35 /* DTShareKit.framework in Frameworks */,
+				500EB33F2170575D0099DB35 /* WhatsAppConnector.framework in Frameworks */,
+				500EB3332170575D0099DB35 /* libYixinSDK.a in Frameworks */,
+				500EB3542170575D0099DB35 /* DingTalkConnector.framework in Frameworks */,
+				500EB33C2170575D0099DB35 /* DropboxConnector.framework in Frameworks */,
+				500EB3382170575D0099DB35 /* ShareSDKExtension.framework in Frameworks */,
+				500EB35F2170575D0099DB35 /* DouBanConnector.framework in Frameworks */,
+				500EB33E2170575D0099DB35 /* FacebookMessengerConnector.framework in Frameworks */,
+				500EB3462170575D0099DB35 /* QQConnector.framework in Frameworks */,
+				500EB33B2170575D0099DB35 /* SMSConnector.framework in Frameworks */,
+				500EB35B2170575D0099DB35 /* PinterestConnector.framework in Frameworks */,
+				500EB3602170575D0099DB35 /* ShareSDK.framework in Frameworks */,
+				500EB3612170575D0099DB35 /* MOBFoundation.framework in Frameworks */,
+				FF16694F6D29C6A85DE78278 /* libPods-Runner.a in Frameworks */,
+				50E63323217EC90000DC863A /* Flutter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090F26B7EBBD55D8366EDFE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		500EB2C62170575D0099DB35 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2C72170575D0099DB35 /* ShareSDK */,
+				500EB3202170575D0099DB35 /* Required */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		500EB2C72170575D0099DB35 /* ShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2C82170575D0099DB35 /* Support */,
+				500EB31F2170575D0099DB35 /* ShareSDK.framework */,
+			);
+			path = ShareSDK;
+			sourceTree = "<group>";
+		};
+		500EB2C82170575D0099DB35 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2C92170575D0099DB35 /* PlatformSDK */,
+				500EB2F02170575D0099DB35 /* Required */,
+				500EB2F32170575D0099DB35 /* Optional */,
+				500EB2F82170575D0099DB35 /* PlatformConnector */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		500EB2C92170575D0099DB35 /* PlatformSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2CA2170575D0099DB35 /* RenRenSDK */,
+				500EB2CD2170575D0099DB35 /* SinaWeiboSDK */,
+				500EB2D22170575D0099DB35 /* WeChatSDK */,
+				500EB2D82170575D0099DB35 /* APSocialSDK */,
+				500EB2DD2170575D0099DB35 /* CMCCSDK */,
+				500EB2E02170575D0099DB35 /* LineSDK */,
+				500EB2E22170575D0099DB35 /* MPShareSDK */,
+				500EB2E42170575D0099DB35 /* QQSDK */,
+				500EB2E62170575D0099DB35 /* KaKaoSDK */,
+				500EB2EA2170575D0099DB35 /* DingTalkSDK */,
+				500EB2EC2170575D0099DB35 /* YiXinSDK */,
+			);
+			path = PlatformSDK;
+			sourceTree = "<group>";
+		};
+		500EB2CA2170575D0099DB35 /* RenRenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2CB2170575D0099DB35 /* RennSDK.bundle */,
+				500EB2CC2170575D0099DB35 /* RennSDK.framework */,
+			);
+			path = RenRenSDK;
+			sourceTree = "<group>";
+		};
+		500EB2CD2170575D0099DB35 /* SinaWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2CE2170575D0099DB35 /* WeiboSDK.bundle */,
+				500EB2CF2170575D0099DB35 /* libWeiboSDK.a */,
+				500EB2D02170575D0099DB35 /* WBHttpRequest.h */,
+				500EB2D12170575D0099DB35 /* WeiboSDK.h */,
+			);
+			path = SinaWeiboSDK;
+			sourceTree = "<group>";
+		};
+		500EB2D22170575D0099DB35 /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2D32170575D0099DB35 /* WXApi.h */,
+				500EB2D42170575D0099DB35 /* WXApiObject.h */,
+				500EB2D52170575D0099DB35 /* README.txt */,
+				500EB2D62170575D0099DB35 /* WechatAuthSDK.h */,
+				500EB2D72170575D0099DB35 /* libWeChatSDK.a */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		500EB2D82170575D0099DB35 /* APSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2D92170575D0099DB35 /* libAPOpenSdk.a */,
+				500EB2DA2170575D0099DB35 /* README.md */,
+				500EB2DB2170575D0099DB35 /* APOpenAPIObject.h */,
+				500EB2DC2170575D0099DB35 /* APOpenAPI.h */,
+			);
+			path = APSocialSDK;
+			sourceTree = "<group>";
+		};
+		500EB2DD2170575D0099DB35 /* CMCCSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2DE2170575D0099DB35 /* TYRZSDK.framework */,
+				500EB2DF2170575D0099DB35 /* Resource.bundle */,
+			);
+			path = CMCCSDK;
+			sourceTree = "<group>";
+		};
+		500EB2E02170575D0099DB35 /* LineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2E12170575D0099DB35 /* LineSDK.framework */,
+			);
+			path = LineSDK;
+			sourceTree = "<group>";
+		};
+		500EB2E22170575D0099DB35 /* MPShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2E32170575D0099DB35 /* MPShareSDK.framework */,
+			);
+			path = MPShareSDK;
+			sourceTree = "<group>";
+		};
+		500EB2E42170575D0099DB35 /* QQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2E52170575D0099DB35 /* TencentOpenAPI.framework */,
+			);
+			path = QQSDK;
+			sourceTree = "<group>";
+		};
+		500EB2E62170575D0099DB35 /* KaKaoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2E72170575D0099DB35 /* KakaoCommon.framework */,
+				500EB2E82170575D0099DB35 /* KakaoLink.framework */,
+				500EB2E92170575D0099DB35 /* KakaoOpenSDK.framework */,
+			);
+			path = KaKaoSDK;
+			sourceTree = "<group>";
+		};
+		500EB2EA2170575D0099DB35 /* DingTalkSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2EB2170575D0099DB35 /* DTShareKit.framework */,
+			);
+			path = DingTalkSDK;
+			sourceTree = "<group>";
+		};
+		500EB2EC2170575D0099DB35 /* YiXinSDK */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2ED2170575D0099DB35 /* libYixinSDK.a */,
+				500EB2EE2170575D0099DB35 /* YXApiObject.h */,
+				500EB2EF2170575D0099DB35 /* YXApi.h */,
+			);
+			path = YiXinSDK;
+			sourceTree = "<group>";
+		};
+		500EB2F02170575D0099DB35 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2F12170575D0099DB35 /* ShareSDKConnector.framework */,
+				500EB2F22170575D0099DB35 /* ShareSDK.bundle */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		500EB2F32170575D0099DB35 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2F42170575D0099DB35 /* ShareSDKUI.bundle */,
+				500EB2F52170575D0099DB35 /* ShareSDKConfigFile.framework */,
+				500EB2F62170575D0099DB35 /* ShareSDKExtension.framework */,
+				500EB2F72170575D0099DB35 /* ShareSDKUI.framework */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		500EB2F82170575D0099DB35 /* PlatformConnector */ = {
+			isa = PBXGroup;
+			children = (
+				500EB2F92170575D0099DB35 /* PrintConnector.framework */,
+				500EB2FA2170575D0099DB35 /* SMSConnector.framework */,
+				500EB2FB2170575D0099DB35 /* DropboxConnector.framework */,
+				500EB2FC2170575D0099DB35 /* RedditConnector.framework */,
+				500EB2FD2170575D0099DB35 /* FacebookMessengerConnector.framework */,
+				500EB2FE2170575D0099DB35 /* WhatsAppConnector.framework */,
+				500EB2FF2170575D0099DB35 /* TelegramConnector.framework */,
+				500EB3002170575D0099DB35 /* EasyChatConnector.framework */,
+				500EB3012170575D0099DB35 /* CMCCConnector.framework */,
+				500EB3022170575D0099DB35 /* AliSocialConnector.framework */,
+				500EB3032170575D0099DB35 /* KaiXinConnector.framework */,
+				500EB3042170575D0099DB35 /* MailConnector.framework */,
+				500EB3052170575D0099DB35 /* QQConnector.framework */,
+				500EB3062170575D0099DB35 /* TumblrConnector.framework */,
+				500EB3072170575D0099DB35 /* VKontakteConnector.framework */,
+				500EB3082170575D0099DB35 /* PocketConnector.framework */,
+				500EB3092170575D0099DB35 /* MingDaoConnector.framework */,
+				500EB30A2170575D0099DB35 /* GooglePlusConnector.framework */,
+				500EB30B2170575D0099DB35 /* TencentWeiboConnector.framework */,
+				500EB30C2170575D0099DB35 /* LineConnector.framework */,
+				500EB30D2170575D0099DB35 /* MeiPaiConnector.framework */,
+				500EB30E2170575D0099DB35 /* CopyConnector.framework */,
+				500EB30F2170575D0099DB35 /* EvernoteConnector.framework */,
+				500EB3102170575D0099DB35 /* InstapaperConnector.framework */,
+				500EB3112170575D0099DB35 /* LinkedInConnector.framework */,
+				500EB3122170575D0099DB35 /* FlickrConnector.framework */,
+				500EB3132170575D0099DB35 /* DingTalkConnector.framework */,
+				500EB3142170575D0099DB35 /* YouTubeConnector.framework */,
+				500EB3152170575D0099DB35 /* TwitterConnector.framework */,
+				500EB3162170575D0099DB35 /* FacebookConnector.framework */,
+				500EB3172170575D0099DB35 /* WechatConnector.framework */,
+				500EB3182170575D0099DB35 /* YouDaoNoteConnector.framework */,
+				500EB3192170575D0099DB35 /* RenrenConnector.framework */,
+				500EB31A2170575D0099DB35 /* PinterestConnector.framework */,
+				500EB31B2170575D0099DB35 /* InstagramConnector.framework */,
+				500EB31C2170575D0099DB35 /* KakaoConnector.framework */,
+				500EB31D2170575D0099DB35 /* SinaWeiboConnector.framework */,
+				500EB31E2170575D0099DB35 /* DouBanConnector.framework */,
+			);
+			path = PlatformConnector;
+			sourceTree = "<group>";
+		};
+		500EB3202170575D0099DB35 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				500EB3212170575D0099DB35 /* MOBFoundation.framework */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		500EB362217057940099DB35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500CC99F2186F8FC00CDA5A4 /* libpath_provider.a */,
+				500CC99D2186F8E500CDA5A4 /* libaudioplayers.a */,
+				501C8E9B217EDBE30099EE55 /* libvideo_player.a */,
+				50317ED0217ED06800861609 /* libimage_picker.a */,
+				500EB367217057A80099DB35 /* libsqlite3.tbd */,
+				500EB3652170579B0099DB35 /* libc++.tbd */,
+				500EB363217057940099DB35 /* libz.tbd */,
+				84AB67A2CD8121111D63D4A2 /* libPods-Runner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				2D5378251FAA1A9400D5DBA9 /* flutter_assets */,
+				3B80C3931E831B6300D905FE /* App.framework */,
+				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
+				9740EEBA1CF902C7004384FC /* Flutter.framework */,
+				9740EEB21CF90195004384FC /* Debug.xcconfig */,
+				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
+				9740EEB31CF90195004384FC /* Generated.xcconfig */,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		97C146E51CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				500EB2C62170575D0099DB35 /* SDK */,
+				9740EEB11CF90186004384FC /* Flutter */,
+				97C146F01CF9000F007C117D /* Runner */,
+				97C146EF1CF9000F007C117D /* Products */,
+				500EB362217057940099DB35 /* Frameworks */,
+				090F26B7EBBD55D8366EDFE2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		97C146EF1CF9000F007C117D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C146EE1CF9000F007C117D /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				7AFFD8ED1D35381100E5BB4D /* AppDelegate.h */,
+				7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */,
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				97C146FD1CF9000F007C117D /* Assets.xcassets */,
+				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
+				97C147021CF9000F007C117D /* Info.plist */,
+				97C146F11CF9000F007C117D /* Supporting Files */,
+				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
+				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		97C146F11CF9000F007C117D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97C146F21CF9000F007C117D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97C146ED1CF9000F007C117D /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				DF53078B16E81345154267C9 /* [CP] Check Pods Manifest.lock */,
+				9740EEB61CF901F6004384FC /* Run Script */,
+				97C146EA1CF9000F007C117D /* Sources */,
+				97C146EB1CF9000F007C117D /* Frameworks */,
+				97C146EC1CF9000F007C117D /* Resources */,
+				9705A1C41CF9048500538489 /* Embed Frameworks */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				F799F34F57EF5002980942AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C146E61CF9000F007C117D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "The Chromium Authors";
+				TargetAttributes = {
+					97C146ED1CF9000F007C117D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q87QUX3533;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97C146E51CF9000F007C117D;
+			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C146ED1CF9000F007C117D /* Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97C146EC1CF9000F007C117D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				500EB32B2170575D0099DB35 /* Resource.bundle in Resources */,
+				500EB3262170575D0099DB35 /* README.txt in Resources */,
+				500EB3292170575D0099DB35 /* README.md in Resources */,
+				500EB3352170575D0099DB35 /* ShareSDK.bundle in Resources */,
+				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */,
+				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				500EB3222170575D0099DB35 /* RennSDK.bundle in Resources */,
+				2D5378261FAA1A9400D5DBA9 /* flutter_assets in Resources */,
+				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				500EB3362170575D0099DB35 /* ShareSDKUI.bundle in Resources */,
+				500EB3242170575D0099DB35 /* WeiboSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" thin\n";
+		};
+		9740EEB61CF901F6004384FC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
+		DF53078B16E81345154267C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F799F34F57EF5002980942AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
+				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97C146EA1CF9000F007C117D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978B8F6F1D3862AE00F588F7 /* AppDelegate.m in Sources */,
+				97C146F31CF9000F007C117D /* main.m in Sources */,
+				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C146FB1CF9000F007C117D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C147001CF9000F007C117D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97C147031CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97C147041CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97C147061CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = Q87QUX3533;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/CMCCSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/LineSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/MPShareSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/DingTalkSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/SDK/ShareSDK",
+					"$(PROJECT_DIR)/SDK/Required",
+				);
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/YiXinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mob.ShareSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MobProvisioningProfiles;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		97C147071CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = Q87QUX3533;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/CMCCSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/LineSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/MPShareSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/DingTalkSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/SDK/ShareSDK",
+					"$(PROJECT_DIR)/SDK/Required",
+				);
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/SDK/ShareSDK/Support/PlatformSDK/YiXinSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mob.ShareSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MobProvisioningProfiles;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147031CF9000F007C117D /* Debug */,
+				97C147041CF9000F007C117D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147061CF9000F007C117D /* Debug */,
+				97C147071CF9000F007C117D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97C146E61CF9000F007C117D /* Project object */;
+}
