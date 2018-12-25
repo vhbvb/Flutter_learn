@@ -1,9 +1,3 @@
-目录
---
-[toc]
-
-<br/>
-<br/>
 
 1、 官方简介
 --
@@ -37,19 +31,19 @@ Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质�
 - 3. vscode 命令运行flutter doctor，会提示你设置flutterSDK路径 （如果遇到权限问题需要用Sudo chown命令，如果遇到文件夹不存在需要手动创建对应的文件夹）
 - 4. 构建第一个Flutter程序：
 
-```objc
-创建程序 ：VSCode -> View -> Command palette : Flutter NewProject
-
-运行程序 ：Debug -> Start Debuging 
-
-注意事项 ：如果遇到 Multiple commands produce 错误，cocoapods导入问题，尝试修改build system：
-在Xcode菜单栏 -> File -> Workspace Setting，将build system修改为legacy build system，然后clean后编译。
-```
+    ```objc
+    创建程序 ：VSCode -> View -> Command palette : Flutter NewProject
+    
+    运行程序 ：Debug -> Start Debuging 
+    
+    注意事项 ：如果遇到 Multiple commands produce 错误，cocoapods导入问题，尝试修改build system：
+    在Xcode菜单栏 -> File -> Workspace Setting，将build system修改为legacy build system，然后clean后编译。
+    ```
 - 5. Hello World!:
-
-```
-void main() => runApp(Center(child:Text("hello,world!",textDirection: TextDirection.ltr)));
-```
+    
+    ```
+    void main() => runApp(Center(child:Text("hello,world!",textDirection: TextDirection.ltr)));
+    ```
 - 附:
 [Pubspec Format 介绍](https://www.dartlang.org/tools/pub/pubspec)
 
@@ -110,14 +104,14 @@ Flutter的动画的核心类为：
 
 ```
 void main() {
-runApp(MaterialApp(
-home: MyAppHome(), // becomes the route named '/'
-routes: <String, WidgetBuilder> {
-'/a': (BuildContext context) => MyPage(title: 'page A'),
-'/b': (BuildContext context) => MyPage(title: 'page B'),
-'/c': (BuildContext context) => MyPage(title: 'page C'),
-},
-));
+  runApp(MaterialApp(
+    home: MyAppHome(), // becomes the route named '/'
+    routes: <String, WidgetBuilder> {
+      '/a': (BuildContext context) => MyPage(title: 'page A'),
+      '/b': (BuildContext context) => MyPage(title: 'page B'),
+      '/c': (BuildContext context) => MyPage(title: 'page C'),
+    },
+  ));
 }
 
 //跳转
@@ -128,9 +122,9 @@ Navigator.of(context).pushNamed('/b');
 
 ```
 Navigator.push(context, new MaterialPageRoute(
-builder: (BuildContext context) => new FTShareHomePage(title: "ShareSDK Flutter Bridge"),
-// fullscreenDialog: true,
-));
+                builder: (BuildContext context) => new FTShareHomePage(title: "ShareSDK Flutter Bridge"),
+                // fullscreenDialog: true,
+              ));
 ```
 
 - 数据回传
@@ -150,14 +144,14 @@ Navigator.of(context).pop({"lat":43.821757,"long":-79.226392});
 
 ```
 Future<Map> loadData() async {
-String dataURL = "https://jsonplaceholder.typicode.com/posts";
-http.Response response = await http.get(dataURL);
-return json.decode(response.body);
+  String dataURL = "https://jsonplaceholder.typicode.com/posts";
+  http.Response response = await http.get(dataURL);
+  return json.decode(response.body);
 }
 
 //调用
 loadData().then((Map data){
-
+    
 });
 ```
 
@@ -165,14 +159,14 @@ loadData().then((Map data){
 
 - **官方介绍：**
 
-Dart 是单线程执行模型，但是它支持 Isolate（一种让 Dart 代码运行在其他线程的方式）、事件循环和异步编程。除非你自己创建一个 Isolate ，否则你的 Dart 代码永远运行在 UI 线程，并由 event loop 驱动。Flutter 的 event loop 和 iOS 中的 main loop 相似——Looper 是附加在主线程上的。
+    Dart 是单线程执行模型，但是它支持 Isolate（一种让 Dart 代码运行在其他线程的方式）、事件循环和异步编程。除非你自己创建一个 Isolate ，否则你的 Dart 代码永远运行在 UI 线程，并由 event loop 驱动。Flutter 的 event loop 和 iOS 中的 main loop 相似——Looper 是附加在主线程上的。
 
-Dart 的单线程模型并不意味着你写的代码一定是阻塞操作，从而卡住 UI。相反，使用 Dart 语言提供的异步工具，例如 async / await ，来实现异步操作。
+    Dart 的单线程模型并不意味着你写的代码一定是阻塞操作，从而卡住 UI。相反，使用 Dart 语言提供的异步工具，例如 async / await ，来实现异步操作。
 
 - **进阶介绍：**
 
-[Flutter,你是怎么把工作放到后台线程的？](https://flutterchina.club/flutter-for-ios/#%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E6%8A%8A%E5%B7%A5%E4%BD%9C%E6%94%BE%E5%88%B0%E5%90%8E%E5%8F%B0%E7%BA%BF%E7%A8%8B%E7%9A%84)
-
+    [Flutter,你是怎么把工作放到后台线程的？](https://flutterchina.club/flutter-for-ios/#%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E6%8A%8A%E5%B7%A5%E4%BD%9C%E6%94%BE%E5%88%B0%E5%90%8E%E5%8F%B0%E7%BA%BF%E7%A8%8B%E7%9A%84)
+    
 7、与原生进行交互
 --
 官方介绍链接: https://flutterchina.club/platform-channels/
@@ -188,57 +182,57 @@ Dart 的单线程模型并不意味着你写的代码一定是阻塞操作，从
 
 ```
 //创建一个channel
-static const channel = const MethodChannel('com.mob.flutter/sharesdk');
+  static const channel = const MethodChannel('com.mob.flutter/sharesdk');
 
 // invokeMethod 方法执行原生方法
-static Future<Map> share(int platform, Map params) async {
-return await channel.invokeMethod("share", [platform, params]);
-}
+  static Future<Map> share(int platform, Map params) async {
+    return await channel.invokeMethod("share", [platform, params]);
+  }
 ```
 
 - 原生层：
 
 ```objc
 - (BOOL)application:(UIApplication *)application
-didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-[GeneratedPluginRegistrant registerWithRegistry:self];
-
-FlutterViewController* controller = (FlutterViewController*)self.window.rootViewController;
-FlutterMethodChannel *channel = [FlutterMethodChannel
-methodChannelWithName:@"com.mob.flutter/sharesdk"
-binaryMessenger:controller];
-[channel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
-
-dispatch_async(dispatch_get_main_queue(), ^{
-
-if ([call.method isEqualToString:@"share"])
-{
-NSMutableDictionary *params = @{}.mutableCopy;
-NSArray *args = call.arguments;
-[params SSDKSetupShareParamsByText:args.lastObject[@"text"] images:args.lastObject[@"images"] url:args.lastObject[@"url"] title:args.lastObject[@"title"] type:SSDKContentTypeAuto];
-[ShareSDK share:[args.firstObject integerValue]
-parameters:params
-onStateChanged:^(SSDKResponseState state,
-NSDictionary *userData,
-SSDKContentEntity *contentEntity,
-NSError *error) {
-
-NSMutableDictionary *dic = @{}.mutableCopy;
-dic[@"state"] = @(state);
-dic[@"userData"] = userData;
-dic[@"contentEntity"] = contentEntity.dictionaryValue;
-dic[@"error"] = error.userInfo;
-if (result)
-{
-result(dic);
-}
-}];
-}
-});
-
-}];
-
-return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [GeneratedPluginRegistrant registerWithRegistry:self];
+    
+    FlutterViewController* controller = (FlutterViewController*)self.window.rootViewController;
+    FlutterMethodChannel *channel = [FlutterMethodChannel
+                                     methodChannelWithName:@"com.mob.flutter/sharesdk"
+                                     binaryMessenger:controller];
+    [channel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if ([call.method isEqualToString:@"share"])
+            {
+                NSMutableDictionary *params = @{}.mutableCopy;
+                NSArray *args = call.arguments;
+                [params SSDKSetupShareParamsByText:args.lastObject[@"text"] images:args.lastObject[@"images"] url:args.lastObject[@"url"] title:args.lastObject[@"title"] type:SSDKContentTypeAuto];
+                [ShareSDK share:[args.firstObject integerValue]
+                     parameters:params
+                 onStateChanged:^(SSDKResponseState state,
+                                  NSDictionary *userData,
+                                  SSDKContentEntity *contentEntity,
+                                  NSError *error) {
+                     
+                     NSMutableDictionary *dic = @{}.mutableCopy;
+                     dic[@"state"] = @(state);
+                     dic[@"userData"] = userData;
+                     dic[@"contentEntity"] = contentEntity.dictionaryValue;
+                     dic[@"error"] = error.userInfo;
+                     if (result)
+                     {
+                         result(dic);
+                     }
+                 }];
+            }
+        });
+        
+    }];
+    
+  return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 ```
 
@@ -256,12 +250,12 @@ return [super application:application didFinishLaunchingWithOptions:launchOption
 
 - 1. 创建一个Package工程
 
-```sh
-flutter create --template=package hello
-#指定org可以自动创建平台桥接文件和example示例
-path_to_fluttersdk/bin/flutter create --org com.yoozoo --template=plugin sharesdk
-```
-
+    ```sh
+    flutter create --template=package hello
+    #指定org可以自动创建平台桥接文件和example示例
+    path_to_fluttersdk/bin/flutter create --org com.yoozoo --template=plugin sharesdk
+    ```
+    
 - 2. 实现package：lib/<package name>.dart下为插件的flutter端代码，ios/Classes/HelloPlugin.m 下为 原生层实现代码，初始代码已有bridge示例
 
 - 3. 启动xcode，插件bridge文件在Pods/Development
@@ -269,61 +263,61 @@ Pods/hello/Classes/下：在编辑Xcode中的iOS平台代码之前，首先确�
 
 - 4. 自动生成api文档：
 
-```
-cd package工程目录
-
-export FLUTTER_ROOT=~/dev/flutter
-
-$FLUTTER_ROOT/bin/cache/dart-sdk/bin/dartdoc
-```
+    ```
+    cd package工程目录
+    
+    export FLUTTER_ROOT=~/dev/flutter
+    
+    $FLUTTER_ROOT/bin/cache/dart-sdk/bin/dartdoc
+    ```
 
 - 5. 发布前检查：
 
-```
-//过程会提示你完善pubspec.yaml，关于example和test的警告可无视
-flutter packages pub publish --dry-run
-```
+    ```
+    //过程会提示你完善pubspec.yaml，关于example和test的警告可无视
+    flutter packages pub publish --dry-run
+    ```
 - 6. 发布：
 
-```
-flutter packages pub publish
-```
+    ```
+    flutter packages pub publish
+    ```
 - 关于分包：
-对于ShareSDK和支付这样的Plugin需要分包且cocoapods含有subspec的，需要开发者在设置完dependences后手动去 packageName.podspec 设置对应的依赖，然后运行 Flutter upgrade package
+    对于ShareSDK和支付这样的Plugin需要分包且cocoapods含有subspec的，需要开发者在设置完dependences后手动去 packageName.podspec 设置对应的依赖，然后运行 Flutter upgrade package
 
-```
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-Pod::Spec.new do |s|
-s.name             = 'sharesdk_flutter'
-s.version          = '0.0.1'
-s.summary          = 'flutter plugin for sharesdk.'
-s.description      = 'ShareSDK is the most comprehensive Social SDK in the world,which share easily with 40+ platforms.'
-s.homepage         = 'http://www.mob.com'
-s.license          = { :file => '../LICENSE' }
-s.author           = { 'Mob' => 'mobproducts@163.com' }
-s.source           = { :path => '.' }
-s.source_files = 'Classes/**/*'
-s.public_header_files = 'Classes/**/*.h'
-s.dependency 'Flutter'
-s.dependency 'mob_sharesdk'
-#  s.dependency 'mob_sharesdk/ShareSDKUI'
-#  s.dependency 'mob_sharesdk/ShareSDKPlatforms/QQ'
-#  s.dependency 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
-#  s.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'
-#  s.dependency 'mob_sharesdk/ShareSDKPlatforms/Facebook'
-#  s.dependency 'mob_sharesdk/ShareSDKPlatforms/Twitter'
-
-s.ios.deployment_target = '8.0'
-end
-```
-
+    ```
+    #
+    # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+    #
+    Pod::Spec.new do |s|
+      s.name             = 'sharesdk_flutter'
+      s.version          = '0.0.1'
+      s.summary          = 'flutter plugin for sharesdk.'
+      s.description      = 'ShareSDK is the most comprehensive Social SDK in the world,which share easily with 40+ platforms.'
+      s.homepage         = 'http://www.mob.com'
+      s.license          = { :file => '../LICENSE' }
+      s.author           = { 'Mob' => 'mobproducts@163.com' }
+      s.source           = { :path => '.' }
+      s.source_files = 'Classes/**/*'
+      s.public_header_files = 'Classes/**/*.h'
+      s.dependency 'Flutter'
+      s.dependency 'mob_sharesdk'
+    #  s.dependency 'mob_sharesdk/ShareSDKUI'
+    #  s.dependency 'mob_sharesdk/ShareSDKPlatforms/QQ'
+    #  s.dependency 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+    #  s.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'
+    #  s.dependency 'mob_sharesdk/ShareSDKPlatforms/Facebook'
+    #  s.dependency 'mob_sharesdk/ShareSDKPlatforms/Twitter'
+      
+      s.ios.deployment_target = '8.0'
+    end
+    ```
+    
 - **附:** 
-- ShareSDK官方package主页:https://pub.dartlang.org/packages/sharesdk
-- 个人学习Demo github地址: https://github.com/vhbvb/Flutter_learn
-- ShareSDK package开发git: https://github.com/MobClub/ShareSDK-For-Flutter
-
+    - ShareSDK官方package主页:https://pub.dartlang.org/packages/sharesdk
+    - 个人学习Demo github地址: https://github.com/vhbvb/Flutter_learn
+    - ShareSDK package开发git: https://github.com/MobClub/ShareSDK-For-Flutter
+    
 <br/>
 
 参考链接:
@@ -340,25 +334,25 @@ end
 
 **个人爬坑记录：**
 -  如何给图片设置圆角
-- Clip系列的Widget可以尝试一下，比如 ClipRRect。这种装饰反而不好做    
+    - Clip系列的Widget可以尝试一下，比如 ClipRRect。这种装饰反而不好做    
 -  如何设置图片Slice
-- image Widget有slice属性，但是注意你的图片一定要在拉伸状态，否则会显示异常
-
+    - image Widget有slice属性，但是注意你的图片一定要在拉伸状态，否则会显示异常
+    
 -  如何设置默认ListView 底部显示
-- ListView 的reverse 设置成true 然后吧scroll的offset设置成 0 既可以，使用与 IM 消息列表等场景
-
+    - ListView 的reverse 设置成true 然后吧scroll的offset设置成 0 既可以，使用与 IM 消息列表等场景
+    
 -  ListView 沉浸式状态栏怎么弄的
-- ListView 默认会偏离状态栏，目前解决方案是scrollable + column 
+    - ListView 默认会偏离状态栏，目前解决方案是scrollable + column 
 
 -  如何优雅的设置键盘弹出偏移动画
-- 嵌套一个safaArea widget，会默认偏移
-
+    - 嵌套一个safaArea widget，会默认偏移
+    
 -  如何解决 ListView Widget复用问题
-- AutomaticKeepAliveClientMixin
+    - AutomaticKeepAliveClientMixin
 
 -  多继承问题怎么解决
-- mixin, 什么是mixin ：https://blog.csdn.net/awftnaaa/article/details/52885155
+    - mixin, 什么是mixin ：https://blog.csdn.net/awftnaaa/article/details/52885155
 -  slider默认padding怎么解决
-- 默认slider 左右总是有默认边距，个人觉得需要自定slider去解决  
+    - 默认slider 左右总是有默认边距，个人觉得需要自定slider去解决  
 
 ...
