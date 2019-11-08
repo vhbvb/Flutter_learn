@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdemo/im.dart';
-import 'package:flutterdemo/ums.dart';
-import 'package:flutterdemo/share.dart';
-import './other.dart';
+import 'package:flutterdemo/route.dart';
 
 class FTHomePage extends StatefulWidget {
   FTHomePage({Key key, this.title}) : super(key: key);
@@ -12,87 +9,73 @@ class FTHomePage extends StatefulWidget {
   _FTHomePageState createState() => new _FTHomePageState();
 }
 
+
 class _FTHomePageState extends State<FTHomePage> {
-  Widget _creatCell(
-      String title, String des, String imageName, Function method) {
-    return new GestureDetector(
-      onTap: method,
-      child: new Container(
-        // color: Colors.accents,
-        padding: const EdgeInsets.fromLTRB(15.0, 22.0, 15.0, 0.0),
-        // alignment: AlignmentGeometry,
-        child: new Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            new Image.asset(
-              imageName,
-              height: 28.0,
-              width: 28.0,
-              fit: BoxFit.cover,
-            ),
-            new Container(
-              padding: const EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  new Text(
-                    title,
-                    style: new TextStyle(
-                      fontSize: 17.0,
-                      color: Colors.black87,
-                    ),
-                  ),
-                  new Text(
-                    des,
-                    style: new TextStyle(
-                      color: Colors.black54,
-                    ),
-                  ),
-                ],
-              ),
-            )
-          ],
-        ),
-      ),
-    );
+
+
+  Image _mainItem(int index) {
+
+    switch (index) {
+      case 0:
+        return Image.asset("assets/main/sharesdk.png");
+      case 1:
+        return Image.asset("assets/main/ddk.png");
+      case 2:
+        return Image.asset("assets/main/ums.png");
+      case 3:
+        return Image.asset("assets/main/im.png");
+      default:
+        return null;
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
-        backgroundColor: Colors.pinkAccent,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
       ),
-      body: new ListView(
-          padding: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
-          children: <Widget>[
-            _creatCell("ShareSDK", "演示ShareSDK在Flutter上的交互", 'assets/share.png',(){
-              Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new FTShareHomePage(title: "ShareSDK Flutter Bridge"),
-                // fullscreenDialog: true,
-              ));
-            }),
-            _creatCell("IMSDK", "聊天UI的搭建和IMSDK的交互", 'assets/im.png', (){
-              Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new FTIMHomePage(),
-                // fullscreenDialog: true,
-              ));
-            }),
-            _creatCell("UMSSDK", "普调登录界面", 'assets/ums.png', (){
-              Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new FTUMSHomePage(),
-                // fullscreenDialog: true,
-              ));
-            }),
-            _creatCell("其他", "其他部分功能显示", 'assets/flutter.png', (){
-              Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new FTOtherDemo(),
-                // fullscreenDialog: true,
-              ));
-            }),
-          ]),
+      body: GridView.builder(
+        padding: EdgeInsets.only(top: 20,left: 10,right: 10),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 30,
+          crossAxisSpacing: 20,
+          childAspectRatio: 2
+        ), 
+        itemBuilder: (BuildContext context, int index) {
+
+          return GestureDetector(
+            onTap: (){
+             String path;
+             switch (index) {
+               case 0:
+                 path = "fg://share";
+                 break;
+               case 1:
+                 path = "fg://im";
+                 break;
+              case 2:
+                 path = "fg://ums";
+                 break;
+              case 3:
+                 path = "fg://wechat";
+                 break;
+               default:
+             }
+              Router(path: path).push(context);
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.blue.withAlpha(15),
+                borderRadius: BorderRadius.circular(5)
+              ),
+              child: _mainItem(index),
+            )
+          );
+        },
+        itemCount: 4,
+      )
     );
   }
 }

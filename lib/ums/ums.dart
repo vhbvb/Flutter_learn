@@ -3,8 +3,8 @@ import './ums_recommended.dart';
 import './ums_user.dart';
 
 class FTUMSHomePage extends StatefulWidget {
-  FTUMSHomePage({Key key, this.title}) : super(key: key);
-  final title;
+  // FTUMSHomePage({Key key, this.title}) : super(key: key);
+  final title = "Users";
 
   @override
   _FTUMSHomePageState createState() => new _FTUMSHomePageState();
@@ -34,7 +34,6 @@ class _FTUMSHomePageState extends State<FTUMSHomePage>
 
   @override
   void dispose() {
-    // TODO: implement dispose
     controller.dispose();
     super.dispose();
   }

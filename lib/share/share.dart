@@ -24,8 +24,7 @@ class ShareSDKUtil<PlatformChannel> {
 
 class FTShareHomePage extends StatelessWidget {
 
-  FTShareHomePage({Key key,this.title}) : super(key: key);
-  final title;
+  String title = "ShareSDK";
 
    Map getShareParams() {
     List images = [

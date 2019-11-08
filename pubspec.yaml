@@ -82,6 +82,10 @@ flutter:
    - assets/msg_send_voice_3.png
    - assets/msg_send_voice_4.png
    - assets/OurMemory.mp3
+   - assets/main/im.png
+   - assets/main/sharesdk.png
+   - assets/main/ums.png
+   - assets/main/ddk.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

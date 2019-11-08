@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import './im_chat.dart';
 
 class FTIMHomePage extends StatefulWidget {
-  FTIMHomePage({Key key, this.title}) : super(key: key);
-  final title;
+  // FTIMHomePage({Key key, this.title}) : super(key: key);
+  final title = "DDKing";
 
   @override
   State<StatefulWidget> createState() => new _FTIMHomePageState();
