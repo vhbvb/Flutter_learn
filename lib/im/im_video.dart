@@ -17,7 +17,7 @@ class FIIMVideoPlayerSimple extends StatefulWidget{
       _FIIMVideoPlayerSimpleState(control: control);
 }
 
-// 保活，有点牛p
+// 保活
 class _FIIMVideoPlayerSimpleState extends State<FIIMVideoPlayerSimple> with AutomaticKeepAliveClientMixin {
   _FIIMVideoPlayerSimpleState({this.control}) : super();
 
@@ -99,7 +99,7 @@ class _FIIMVideoPlayerSimpleState extends State<FIIMVideoPlayerSimple> with Auto
               alignment: Alignment.center,
               children: <Widget>[
                 Image.network(
-                    "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3874676548,29357861&fm=11&gp=0.jpg"),
+                    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573561281761&di=896c69de357831f686ea3f7e0b846244&imgtype=0&src=http%3A%2F%2Fi2.letvimg.com%2Fvrs%2F201409%2F03%2Ffda8fc43-c8ad-4358-ab30-e49327b5d8f8.jpg"),
                 Image.asset("assets/im_player.png")
               ],
             ),

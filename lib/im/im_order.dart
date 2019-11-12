@@ -164,7 +164,7 @@ class FTIMChatOrder {
                               top: 15.0, left: 15.0, right: 9.0),
                           child: new ClipOval(
                               child: Image.network(
-                            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539578399109&di=7086db6880bf996b1289f428bd4e0e5a&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201509%2F19%2F20150919141025_AxJHc.jpeg",
+                            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573560951288&di=ed3b4995035253955cef2cce4161f442&imgtype=0&src=http%3A%2F%2Fi2.letvimg.com%2Fvrs%2F201409%2F03%2Ffda8fc43-c8ad-4358-ab30-e49327b5d8f8.jpg",
                             height: 46.0,
                             width: 46.0,
                           )),

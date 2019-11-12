@@ -10,7 +10,6 @@ class PresentRoute extends CupertinoPageRoute{
   
   @override
     Widget buildTransitions(BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation, Widget child) {
-      // TODO: implement buildTransitions
       return super.buildTransitions(context, animation, secondaryAnimation, child);
     }
 } 
@@ -27,8 +26,6 @@ class _FTIMImagePreviewState extends State<FTIMImagePreview> {
 final String url;
   @override
     Widget build(BuildContext context) {
-      // TODO: implement build
-
     Widget image;
     if (url.startsWith("http")) 
     {
@@ -75,15 +72,13 @@ final String url;
 
 @override
   void initState() {
-    // TODO: implement initState
-          if (url.startsWith("http")) {
+      if (url.startsWith("http")) {
         vp = VideoPlayerController.network(url)..addListener(() {});
       } else {
         vp = VideoPlayerController.asset(url)..addListener(() {});
       }
       vp.setLooping(true);
       vp.initialize().then((_) {
-        print("initialize finish=====================");
         print(vp.value.size);
         setState(() {
                   vp.play();
@@ -98,7 +93,6 @@ final String url;
   }
   @override
     Widget build(BuildContext context) {
-      // TODO: implement build
 return (vp.value.initialized)
         ? Stack(
           alignment: Alignment.center,
@@ -134,7 +128,7 @@ return (vp.value.initialized)
               alignment: Alignment.center,
               children: <Widget>[
                 Image.network(
-                    "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3874676548,29357861&fm=11&gp=0.jpg"),
+                    "http://i2.letvimg.com/vrs/201409/03/fda8fc43-c8ad-4358-ab30-e49327b5d8f8.jpg"),
                 Image.asset("assets/im_player.png")
               ],
             ),
@@ -143,7 +137,6 @@ return (vp.value.initialized)
 
       @override
   void dispose() {
-    // TODO: implement dispose
     vp.dispose();
     print("----------dispose");
     super.dispose();

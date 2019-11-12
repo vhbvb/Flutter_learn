@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterdemo/im/im.dart';
 import 'package:flutterdemo/share/share.dart';
 import 'package:flutterdemo/ums/ums.dart';
-import 'package:flutterdemo/wechat/wechat.dart';
+import 'package:flutterdemo/jokes/jokes.dart';
 
 class Router {
   Router({this.path}): super();
@@ -31,7 +31,7 @@ class Router {
       case "ums":
         return FTUMSHomePage();
       case "wechat":
-        return FTWechat();
+        return FTJokes();
     }
     return null;
   }

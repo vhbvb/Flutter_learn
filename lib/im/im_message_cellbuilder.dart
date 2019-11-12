@@ -27,7 +27,7 @@ class MessageCellBuilder {
       child: new ClipOval(
           child: Image.network(
         !isSend
-            ? "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539578399109&di=7086db6880bf996b1289f428bd4e0e5a&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201509%2F19%2F20150919141025_AxJHc.jpeg"
+            ? "https://i2.hdslb.com/bfs/face/d83b402cdab58ff84d415941f79b515ec14fd44f.jpg"
             : "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1021928129,596627892&fm=26&gp=0.jpg",
         height: 44.0,
         width: 44.0,
