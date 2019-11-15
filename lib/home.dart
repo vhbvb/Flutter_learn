@@ -12,7 +12,6 @@ class FTHomePage extends StatefulWidget {
 
 class _FTHomePageState extends State<FTHomePage> {
 
-
   Image _mainItem(int index) {
 
     switch (index) {
@@ -23,7 +22,9 @@ class _FTHomePageState extends State<FTHomePage> {
       case 2:
         return Image.asset("assets/main/ums.png");
       case 3:
-        return Image.asset("assets/main/im.png");
+        return Image.asset("assets/main/nh.jpeg");
+      case 4:
+        return Image.asset("assets/main/tt.png");
       default:
         return null;
     }
@@ -59,7 +60,10 @@ class _FTHomePageState extends State<FTHomePage> {
                  path = "fg://ums";
                  break;
               case 3:
-                 path = "fg://wechat";
+                 path = "fg://nh";
+                 break;
+              case 4:
+                 path = "fg://tt";
                  break;
                default:
              }
@@ -74,7 +78,7 @@ class _FTHomePageState extends State<FTHomePage> {
             )
           );
         },
-        itemCount: 4,
+        itemCount: 5,
       )
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/im/im.dart';
 import 'package:flutterdemo/share/share.dart';
+import 'package:flutterdemo/tantan/tantan.dart';
 import 'package:flutterdemo/ums/ums.dart';
 import 'package:flutterdemo/jokes/jokes.dart';
 
@@ -13,7 +14,8 @@ class Router {
     'fg://share': 'share',
     'fg://im': 'im',
     'fg://ums': 'ums',
-    'fg://wechat': 'wechat'
+    'fg://nh': 'nh',
+    'fg://tt': 'tt'
   };
 
   Widget route() {
@@ -30,8 +32,10 @@ class Router {
         return FTIMHomePage();
       case "ums":
         return FTUMSHomePage();
-      case "wechat":
+      case "nh":
         return FTJokes();
+      case "tt":
+        return FTTantan();
     }
     return null;
   }
