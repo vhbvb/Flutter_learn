@@ -43,12 +43,7 @@ class _FTTantanState extends State<FTTantan> {
 
   @override
   Widget build(BuildContext context) {
-    List cards = images.map((path) {
-      return Image.network(
-        path,
-        fit: BoxFit.fill,
-      );
-    }).toList();
+
     return Scaffold(
       appBar: AppBar(
         title: Text("探探", style: TextStyle(color: Colors.white)),

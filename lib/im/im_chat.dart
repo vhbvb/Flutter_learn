@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import './im_message_cellbuilder.dart';
 import './im_input_bar.dart';
-import 'dart:async';
 import './im_emoj.dart';
 import './im_media.dart';
 import 'package:image_picker/image_picker.dart';

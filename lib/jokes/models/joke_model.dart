@@ -1,6 +1,5 @@
 
 import 'dart:core';
-import 'dart:ffi';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'joke_model.g.dart';
