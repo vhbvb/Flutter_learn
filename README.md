@@ -1,4 +1,3 @@
-
 1、 官方简介
 --
 
@@ -17,7 +16,7 @@ Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质�
 
 <br/>
 
-![1.jpeg](http://note.youdao.com/yws/res/9023/WEBRESOURCE76d5e10828aed788e63e6c13d65fc204)
+![](https://raw.githubusercontent.com/vhbvb/image_cloud/master/general20200103173948.png)
 
 <br/>
 <br/>
@@ -41,7 +40,7 @@ Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质�
     ```
 - 5. Hello World!:
     
-    ```
+    ```d
     void main() => runApp(Center(child:Text("hello,world!",textDirection: TextDirection.ltr)));
     ```
 - 附:
@@ -312,14 +311,15 @@ Pods/hello/Classes/下：在编辑Xcode中的iOS平台代码之前，首先确�
       s.ios.deployment_target = '8.0'
     end
     ```
-    
-- **附:** 
-    - ShareSDK官方package主页:https://pub.dartlang.org/packages/sharesdk
-    - 个人学习Demo github地址: https://github.com/vhbvb/Flutter_learn
-    - ShareSDK package开发git: https://github.com/MobClub/ShareSDK-For-Flutter
-    
 <br/>
 
+附:
+--
+
+- ShareSDK官方package主页:https://pub.dartlang.org/packages/sharesdk
+- 个人学习Demo github地址: https://github.com/vhbvb/Flutter_learn
+- ShareSDK package开发git: https://github.com/MobClub/ShareSDK-For-Flutter
+    
 参考链接:
 --
 
